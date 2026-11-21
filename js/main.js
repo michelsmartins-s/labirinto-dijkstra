@@ -1,4 +1,7 @@
 
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+
 let LINHAS = parseInt(prompt("digite a quantidade de linhas"));
 let COLUNAS = parseInt(prompt("digite a quantidade de colunas"));
 let PERCENTUAL = (parseFloat(prompt("digite o percentual do labirinto")))/100;

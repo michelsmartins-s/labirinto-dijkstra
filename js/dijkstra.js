@@ -50,4 +50,6 @@ function algoritmoDjikstra(grade, LINHAS, COLUNAS, celulaDeInicio, celulaDeFim) 
             atual = anteriores[atual];
         }
     }
+
+    return caminho;
 }
