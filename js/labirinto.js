@@ -1,13 +1,4 @@
 
-
-let LINHAS = parseInt(prompt("digite a quantidade de linhas"));
-let COLUNAS = parseInt(prompt("digite a quantidade de colunas"));
-const LADO = 30;
-let PERCENTUAL = (parseFloat(prompt("digite o percentual do labirinto")))/100;
-let celulaDeInicio = parseInt(prompt("informe uma célula de inicio (entre " + 0 + " e " + (LINHAS*COLUNAS-1)));
-let celulaDeFim = parseInt(prompt("informe uma célula de fim (entre " + 0 + " e " + (LINHAS*COLUNAS-1)));
-
-
 function gerarLabirinto(LINHAS, COLUNAS, PERCENTUAL) {
     let grade = [];
     for (let quantidade = 0; quantidade < LINHAS*COLUNAS; quantidade++) {
