@@ -1,7 +1,11 @@
-const LINHAS = 20;
-const COLUNAS = 20;
+
+
+let LINHAS = parseInt(prompt("digite a quantidade de linhas"));
+let COLUNAS = parseInt(prompt("digite a quantidade de colunSas"));
 const LADO = 30;
-const PERCENTUAL = 0.05;
+let PERCENTUAL = parseInt(prompt("digite o percentual do labirinto"));
+let celulaDeInicio = parseInt(prompt("informe uma célula de inicio (entre " + 0 + " e " + LINHAS*COLUNAS-1));
+let celulaDeFim = parseInt(prompt("informe uma célula de fim (entre " + 0 + " e " + LINHAS*COLUNAS-1));
 
 let grade = [];
 for (let quantidade = 0; quantidade < LINHAS*COLUNAS; quantidade++) {
