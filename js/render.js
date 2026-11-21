@@ -1,6 +1,17 @@
 function desenharLabirinto(ctx, canvas, grade, LINHAS, COLUNAS, LADO, caminho) {
+    console.log("Caminho recebido:", caminho);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeStyle = "black";
+
+    if (caminho) {
+        for(let i = 0; i < caminho.length; i++) {
+            let celula = caminho[i];
+            let x = (celula%COLUNAS);
+            let y = Math.floor(celula/COLUNAS);
+            ctx.fillStyle = "rgba(255, 13, 0, 0.4)";
+            ctx.fillRect(x * LADO, y * LADO, LADO, LADO);
+        }
+    }
     for (let celula = 0; celula < LINHAS*COLUNAS; celula++) {
         let x = celula%COLUNAS;
         let y = Math.floor(celula/COLUNAS);

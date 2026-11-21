@@ -38,10 +38,7 @@ function algoritmoDjikstra(grade, LINHAS, COLUNAS, celulaDeInicio, celulaDeFim) 
     }
 
     let caminho = [];
-    if (distancias[celulaDeFim] === Infinity) {
-        alert("nao existe caminho")
-    }
-    else
+    if (!distancias[celulaDeFim] === Infinity)
     {
         let atual = celulaDeFim;
 
